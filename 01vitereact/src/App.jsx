@@ -1,11 +1,10 @@
-
+import Chai from "./chai"
 
 function App() {
-
-
   return (
     <h1>
-     Hello new coder back to react
+     <Chai></Chai>
+     Chai aur react
     </h1>
   )
 }
