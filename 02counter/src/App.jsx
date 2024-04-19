@@ -4,13 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  let [counter,setCounter]=  useState(15)
+  const [counter,setCounter]=  useState(15)
   const addValue = () =>{
     console.log("clicked",Math.random());
-    // counter = counter + 1; 
     if(counter<20)
     {
-      setCounter(counter + 1)
+      setCounter(prevCounter=>prevCounter+1)
+      setCounter(prevCounter=>prevCounter+1)
+     
     }
   }
   const reduceValue = () => {
